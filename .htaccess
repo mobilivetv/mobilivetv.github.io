@@ -8,11 +8,11 @@ RewriteRule ^([^*]+)/list/([0-9]+)$ list.php?cat=$1&id=$2 [L]
 RewriteRule ^([^*]+)(.*)$ download.php?cat=$1&id=$2 [L]
 
 RewriteRule ^([^*]+)/view/([0-9]+)$ view.php?cat=$1&id=$2 [L]
-ErrorDocument 304 /site_0.xhtml
-ErrorDocument 400 /site_0.xhtml
-ErrorDocument 401 /site_0.xhtml
-ErrorDocument 403 /site_0.xhtml
-ErrorDocument 404 /site_0.xhtml
-ErrorDocument 406 /site_0.xhtml
-ErrorDocument 500 /site_0.xhtml
-ErrorDocument 502 /site_0.xhtml
+ErrorDocument 304 /index.html
+ErrorDocument 400 /index.html
+ErrorDocument 401 /index.html
+ErrorDocument 403 /index.html
+ErrorDocument 404 /index.html
+ErrorDocument 406 /index.html
+ErrorDocument 500 /index.html
+ErrorDocument 502 /index.html
