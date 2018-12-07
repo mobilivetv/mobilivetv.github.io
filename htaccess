@@ -1,0 +1,18 @@
+DirectoryIndex 
+AddDefaultCharset UTF-8
+RewriteEngine On
+RewriteBase /
+RewriteRule ^([^*]+)/categorylist/([0-9]+)$ site.php?g=$1&p=$2 [L]
+RewriteRule ^([^*]+)$ site.php?g=$1 [L]
+RewriteRule ^([^*]+)/list/([0-9]+)$ list.php?cat=$1&id=$2 [L]
+RewriteRule ^([^*]+)(.*)$ download.php?cat=$1&id=$2 [L]
+
+RewriteRule ^([^*]+)/view/([0-9]+)$ view.php?cat=$1&id=$2 [L]
+ErrorDocument 304 /site_0.xhtml
+ErrorDocument 400 /site_0.xhtml
+ErrorDocument 401 /site_0.xhtml
+ErrorDocument 403 /site_0.xhtml
+ErrorDocument 404 /site_0.xhtml
+ErrorDocument 406 /site_0.xhtml
+ErrorDocument 500 /site_0.xhtml
+ErrorDocument 502 /site_0.xhtml
